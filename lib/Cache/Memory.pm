@@ -34,7 +34,7 @@ use Cache::Memory::Entry;
 use base qw(Cache);
 use fields qw(namespace);
 
-our $VERSION = '2.00';
+our $VERSION = '2.01';
 
 
 # storage for all data
@@ -178,7 +178,7 @@ sub count {
     my $count = 0;
     my $nsstore = $Store{$self->{namespace}};
     foreach my $key (keys %$nsstore) {
-        $count++ if exists $nsstore->{$key}->{data};
+        $count++ if defined $nsstore->{$key}->{data};
     }
     return $count;
 }
@@ -246,7 +246,7 @@ sub remove {
     my $store_entry = $Store{$ns}{$key}
         or return undef;
 
-    exists $store_entry->{data}
+    defined $store_entry->{data}
         or return undef;
 
     # remove from heap
@@ -284,7 +284,7 @@ sub add_expiry_to_heap {
     my Cache::Memory $self = shift;
     my ($key, $time) = @_;
 
-    my $exp_elem = Memory::Cache::HeapElem->new($self->{namespace},$key,$time);
+    my $exp_elem = Cache::Memory::HeapElem->new($self->{namespace},$key,$time);
     $Expiry_Heap->add($exp_elem);
     return $exp_elem;
 }
@@ -301,7 +301,7 @@ sub add_age_to_heap {
     my ($key, $time) = @_;
     my $ns = $self->{namespace};
 
-    my $age_elem = Memory::Cache::HeapElem->new($ns,$key,$time);
+    my $age_elem = Cache::Memory::HeapElem->new($ns,$key,$time);
     $Age_Heaps{$ns}->add($age_elem);
     return $age_elem;
 }
@@ -311,7 +311,7 @@ sub add_use_to_heap {
     my ($key, $time) = @_;
     my $ns = $self->{namespace};
 
-    my $use_elem = Memory::Cache::HeapElem->new($ns,$key,$time);
+    my $use_elem = Cache::Memory::HeapElem->new($ns,$key,$time);
     $Use_Heaps{$ns}->add($use_elem);
     return $use_elem;
 }
@@ -343,7 +343,7 @@ sub entry_dropped_final_rc {
     my ($key) = @_;
     my $ns = $self->{namespace};
 
-    delete $Store{$ns}{$key} unless exists $Store{$ns}{$key}{data};
+    delete $Store{$ns}{$key} unless defined $Store{$ns}{$key}{data};
 }
 
 
@@ -367,6 +367,6 @@ This module is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND,
 either expressed or implied. This program is free software; you can
 redistribute or modify it under the same terms as Perl itself.
 
-$Id: Memory.pm,v 1.2 2003/06/29 14:31:19 caleishm Exp $
+$Id: Memory.pm,v 1.5 2003/08/14 13:49:30 caleishm Exp $
 
 =cut
