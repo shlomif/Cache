@@ -1,11 +1,15 @@
-2003-08-18
-	- Bugfix release (2.01)
-	 o Fixed parsing of all digit expiry times
-	 o Fixed use of scalar validity in Cache::Memory
-	 o Allowed validity to be set on non-existant entry
-	   (sets entry data to zero length)
-	 o Fixed package name for Cache::Memory::HeapElem
-	 o Documentation fixes
+Revision history for Perl extension Cache.
 
-2003-07-07
-	- Initial release (2.00)
+1.83  Tue Feb 24 07:39:32 2004
+        - released it, first public LGPL release.
+        - added signal-fixup in perl-master mode
+        - fixed 'cache --perl -e "exit 33"' to return 33
+        - added tty-fixup in perl-master mode
+        - included a simple Makefile.unix for Cache build
+        - prepared to release the stuff
+        - started to maintain this ChangeLog :)
+        
+0.01  Sun Jul 15 20:10:13 2001
+	- original version; created by h2xs 1.21 with options
+		-X Cache
+
