@@ -1,12 +1,23 @@
-# http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Cache
-version:      1.83
-version_from: Cache.pm
+version:      2.02
+version_from: lib/Cache.pm
 installdirs:  site
 requires:
-    Parse::RecDescent:             1.8
-    Spreadsheet::WriteExcel:       0.32
+    Symbol:                        1.02
+    File::NFSLock:                 1.2
+    IO::String:                    1.02
+    IO::File:                      1.08
+    Digest::SHA1:                  2.01
+    File::Path:                    1
+    Fcntl:                         1.03
+    IO::Handle:                    1.21
+    Heap::Fibonacci:               0.01
+    File::Spec:                    0.8
+    DB_File:                       1.72
+    Test::More:                    0.45
+    Date::Parse:                   2.24
+    Storable:                      1
 
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+generated_by: ExtUtils::MakeMaker version 6.12
