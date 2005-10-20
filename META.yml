@@ -1,23 +1,25 @@
+# http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Cache
-version:      2.02
+version:      2.03
 version_from: lib/Cache.pm
 installdirs:  site
 requires:
-    Symbol:                        1.02
-    File::NFSLock:                 1.2
-    IO::String:                    1.02
-    IO::File:                      1.08
-    Digest::SHA1:                  2.01
-    File::Path:                    1
-    Fcntl:                         1.03
-    IO::Handle:                    1.21
-    Heap::Fibonacci:               0.01
-    File::Spec:                    0.8
-    DB_File:                       1.72
-    Test::More:                    0.45
     Date::Parse:                   2.24
+    DB_File:                       1.72
+    Digest::SHA1:                  2.01
+    Fcntl:                         1.03
+    File::Find:                    0
+    File::NFSLock:                 1.2
+    File::Path:                    1
+    File::Spec:                    0.8
+    Heap::Fibonacci:               0.01
+    IO::File:                      1.08
+    IO::Handle:                    1.21
+    IO::String:                    1.02
     Storable:                      1
+    Symbol:                        1.02
+    Test::More:                    0.45
 
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.12
+generated_by: ExtUtils::MakeMaker version 6.17

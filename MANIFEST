@@ -33,4 +33,4 @@ t/memory_fifo.t
 t/memory_lru.t
 t/memory_tie.t
 t/null.t
-META.yml                                Module meta-data (added by MakeMaker)
+META.yml                                 Module meta-data (added by MakeMaker)
