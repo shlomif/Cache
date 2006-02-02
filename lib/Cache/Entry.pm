@@ -39,7 +39,7 @@ use Carp;
 
 use fields qw(cache key);
 
-our $VERSION = '2.03';
+our $VERSION = '2.04';
 
 
 sub new {
@@ -138,17 +138,16 @@ sub get {
 
     if (defined $result) {
         my $validate_callback = $cache->{validate_callback};
-        if ($validate_callback) {
-            $validate_callback->($self) or return undef;
-        }
+        $validate_callback or return $result;
+        $validate_callback->($self) and return $result;
     }
-    else {
-        my $load_callback = $cache->{load_callback}
-            or return undef;
-        my @options;
-        ($result, @options) = $load_callback->($self);
-        $self->set($result, @options) if defined $result;
-    }
+
+    my $load_callback = $cache->{load_callback}
+        or return undef;
+    my @options;
+    ($result, @options) = $load_callback->($self);
+    $self->set($result, @options) if defined $result;
+
     return $result;
 }
 
@@ -196,7 +195,13 @@ sub set_expiry {
     my Cache::Entry $self = shift;
     my ($time) = @_;
 
-    $self->_set_expiry(Cache::Canonicalize_Expiration_Time($time));
+    my $expiry = Cache::Canonicalize_Expiration_Time($time);
+
+    if (defined $expiry and $expiry == 0) {
+        return $self->remove();
+    }
+
+    $self->_set_expiry($expiry);
 }
 
 # Implement this method instead of set_expiry
@@ -345,12 +350,12 @@ Cache, Cache::File
 
 =head1 COPYRIGHT
 
- Copyright (C) 2003 Chris Leishman.  All Rights Reserved.
+ Copyright (C) 2003-2006 Chris Leishman.  All Rights Reserved.
 
 This module is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND,
 either expressed or implied. This program is free software; you can
 redistribute or modify it under the same terms as Perl itself.
 
-$Id: Entry.pm,v 1.5 2005/10/20 12:52:03 caleishm Exp $
+$Id: Entry.pm,v 1.8 2006/01/31 15:23:58 caleishm Exp $
 
 =cut
