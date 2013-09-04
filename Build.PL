@@ -2,6 +2,7 @@ use strict;
 use warnings;
 
 use lib "./inc";
+use Devel::AssertOS qw(Unix);
 
 use Test::Run::Builder;
 
