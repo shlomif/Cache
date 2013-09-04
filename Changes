@@ -3,6 +3,11 @@
     - Fix https://rt.cpan.org/Ticket/Display.html?id=78817
         - Fix a warning for lc called with undef value
         when "-w" is specified - during some tests.
+    - Tests fail or get stuck on Windows - use Devel::AssertOS to make sure
+    we don't build there.
+        - https://rt.cpan.org/Ticket/Display.html?id=81386
+        - if a kind soul will fix the tests and/or the code on MSWin, we will
+        remove it.
 
 2006-02-01
 	- Bugfix release (2.04)
