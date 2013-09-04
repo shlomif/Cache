@@ -23,7 +23,12 @@ To install:
 
 will probably do it.
 
-Please send any bug reports to Chris Leishman <chris@leishman.org>.
-Messages of thanks are also appreciated :)
+Please send any bug reports to the rt.cpan.org queue at
+https://rt.cpan.org/Dist/Display.html?Name=Cache .
+
+This module was originally created by Chris Leishman <chris@leishman.org>
+and is now maintained by Shlomi Fish ( http://www.shlomifish.org/ ).
+
+Messages of thanks can be sent by E-mail. :)
 
 Enjoy!
