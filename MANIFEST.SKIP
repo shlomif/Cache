@@ -1,3 +1,5 @@
+^_build/
+^Build$
 \bCVS\b
 ^Makefile$
 ^Makefile.old$
@@ -9,3 +11,5 @@ pm_to_blib
 .swp$
 ~$
 ^\.gitignore$
+^MYMETA\.yml$
+^MYMETA\.json$

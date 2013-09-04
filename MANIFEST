@@ -1,5 +1,7 @@
+Build.PL
 Changes
 design.dia
+inc/Test/Run/Builder.pm
 lib/Cache.pm
 lib/Cache/Entry.pm
 lib/Cache/File.pm
@@ -17,12 +19,9 @@ lib/Cache/RemovalStrategy/FIFO.pm
 lib/Cache/RemovalStrategy/LRU.pm
 lib/Cache/Tester.pm
 LICENSE
-Makefile.PL
 MANIFEST
 MANIFEST.SKIP
 META.yml			Module meta-data (added by MakeMaker)
-MYMETA.json
-MYMETA.yml
 README
 t/00basic.t
 t/01fileheap.t
