@@ -310,8 +310,6 @@ sub _set_cache_umask {
 Specify the level of locking to be used.  There are three different levels
 available:
 
-=over
-
 =item Cache::File::LOCK_NONE()
 
 No locking is performed.  Useful when you can guarantee only one process will

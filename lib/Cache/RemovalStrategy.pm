@@ -40,6 +40,8 @@ sub remove_size;
 1;
 __END__
 
+=back
+
 =head1 SEE ALSO
 
 Cache

@@ -479,6 +479,8 @@ These methods are only for use internally (by concrete Cache implementations).
 Converts a timespec as described for Cache::Entry::set_expiry() into a unix
 time.
 
+=back
+
 =cut
 
 sub Canonicalize_Expiration_Time {
