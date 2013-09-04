@@ -484,8 +484,14 @@ time.
 =cut
 
 sub Canonicalize_Expiration_Time {
-    my $timespec = lc($_[0])
-        or return undef;
+    my $timespec;
+
+    my $timespec_param = shift(@_);
+    if (! $timespec_param)
+    {
+        return undef;
+    }
+    $timespec = lc($timespec_param);
 
     my $time;
 
