@@ -53,6 +53,7 @@ MANIFEST.SKIP
 META.json
 META.yml			Module meta-data (added by MakeMaker)
 README
+scripts/bump-version-number.pl
 t/00basic.t
 t/01fileheap.t
 t/file.t
