@@ -31,7 +31,7 @@ use Carp;
 
 use fields qw(db dbhash);
 
-our $VERSION = '2.04';
+our $VERSION = '2.05';
 
 # common info object
 my $BTREEINFO = new DB_File::BTREEINFO;

@@ -39,7 +39,7 @@ use Carp;
 
 use fields qw(cache key);
 
-our $VERSION = '2.04';
+our $VERSION = '2.05';
 
 
 sub new {

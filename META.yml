@@ -26,43 +26,43 @@ name: Cache
 provides:
   Cache:
     file: lib/Cache.pm
-    version: 2.04
+    version: 2.05
   Cache::Entry:
     file: lib/Cache/Entry.pm
-    version: 2.04
+    version: 2.05
   Cache::File:
     file: lib/Cache/File.pm
-    version: 2.04
+    version: 2.05
   Cache::File::Entry:
     file: lib/Cache/File/Entry.pm
-    version: 2.04
+    version: 2.05
   Cache::File::Handle:
     file: lib/Cache/File/Handle.pm
     version: 0
   Cache::File::Heap:
     file: lib/Cache/File/Heap.pm
-    version: 2.04
+    version: 2.05
   Cache::IOString:
     file: lib/Cache/IOString.pm
     version: 0
   Cache::Memory:
     file: lib/Cache/Memory.pm
-    version: 2.04
+    version: 2.05
   Cache::Memory::Entry:
     file: lib/Cache/Memory/Entry.pm
-    version: 2.04
+    version: 2.05
   Cache::Memory::HeapElem:
     file: lib/Cache/Memory/HeapElem.pm
     version: 0
   Cache::Null:
     file: lib/Cache/Null.pm
-    version: 2.04
+    version: 2.05
   Cache::Null::Entry:
     file: lib/Cache/Null/Entry.pm
-    version: 2.04
+    version: 2.05
   Cache::RemovalStrategy:
     file: lib/Cache/RemovalStrategy.pm
-    version: 2.04
+    version: 2.05
   Cache::RemovalStrategy::FIFO:
     file: lib/Cache/RemovalStrategy/FIFO.pm
     version: 0
@@ -71,7 +71,7 @@ provides:
     version: 0
   Cache::Tester:
     file: lib/Cache/Tester.pm
-    version: 2.04
+    version: 2.05
 requires:
   DB_File: 1.72
   Date::Parse: 2.24
@@ -91,4 +91,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://bitbucket.org/shlomif/web-cpan
-version: 2.04
+version: 2.05
