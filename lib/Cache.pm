@@ -54,7 +54,7 @@ use fields qw(
         default_expires removal_strategy size_limit
         load_callback validate_callback);
 
-our $VERSION = '2.05';
+our $VERSION = '2.06';
 
 our $EXPIRES_NOW = 'now';
 our $EXPIRES_NEVER = 'never';

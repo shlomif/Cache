@@ -11,6 +11,7 @@
         fix.
     - Get rid of trailing space.
         - Add t/style-trailing-space.t
+    - Bugfix/maintenance release (2.06)
 
 2013-09-05
     - Add t/pod.t and got the embedded PODs to validate.
