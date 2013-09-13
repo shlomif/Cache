@@ -9,6 +9,8 @@
         - ->set after ->set_namespace failed.
         - Thanks to justin@techadvise.com for the report and for a proposed
         fix.
+    - Get rid of trailing space.
+        - Add t/style-trailing-space.t
 
 2013-09-05
     - Add t/pod.t and got the embedded PODs to validate.

@@ -92,7 +92,7 @@ sub new {
     # init heaps
     $Age_Heaps{$ns} ||= Heap::Fibonacci->new();
     $Use_Heaps{$ns} ||= Heap::Fibonacci->new();
-    
+
     return $self;
 }
 

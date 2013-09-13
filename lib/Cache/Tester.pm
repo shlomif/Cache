@@ -172,7 +172,7 @@ sub test_cache_count {
         $cache->set("key$_", "test");
     }
     _is($cache->count(), 100, 'cache count correct after multiple sets');
-    
+
     shuffle(\@keys);
     foreach(@keys) {
         $cache->remove("key$_");

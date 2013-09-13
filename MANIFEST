@@ -67,4 +67,5 @@ t/memory_set_namespace_rt32339.t
 t/memory_tie.t
 t/null.t
 t/pod.t
+t/style-trailing-space.t
 TODO

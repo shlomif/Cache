@@ -196,7 +196,7 @@ sub count {
     my $index = $self->get_index();
     $count = $$index{$COUNT_KEY};
     $self->unlock();
-    
+
     return $count || 0;
 }
 
@@ -208,13 +208,13 @@ sub size {
     my $index = $self->get_index();
     $size = $$index{$SIZE_KEY};
     $self->unlock();
-    
+
     return $size || 0;
 }
 
 sub sync {
     my Cache::File $self = shift;
-    # TODO: check entries in cache root and rebuild heaps 
+    # TODO: check entries in cache root and rebuild heaps
 }
 
 

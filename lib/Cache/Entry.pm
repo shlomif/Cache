@@ -230,7 +230,7 @@ that writers will have have an exclusive lock and readers a shared one.  Thus
 the method get() (or obtaining another handle) should be avoided whilst a
 write handle is held.  Using set() or remove(), however, should be supported.
 These clear the current entry and whilst they do not invalidate open handles,
-those handle will from then on refer to old data and any changes to the data 
+those handle will from then on refer to old data and any changes to the data
 will be discarded.
 
 =cut

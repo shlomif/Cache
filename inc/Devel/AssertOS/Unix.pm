@@ -20,7 +20,7 @@ sub os_is { Devel::CheckOS::os_is(matches()); }
 Devel::CheckOS::die_unsupported() unless(os_is());
 
 sub expn {
-join("\n", 
+join("\n",
 "The OS supports multiple concurrent users, devices are represented as",
 "pseudo-files in /dev, there is a single root to the filesystem, users",
 "are protected from interference from other users, and the API is POSIXy.",

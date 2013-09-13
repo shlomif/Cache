@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   Module::Build: 0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132510'
 keywords:
   - cache
   - caching
@@ -38,13 +38,11 @@ provides:
     version: 2.05
   Cache::File::Handle:
     file: lib/Cache/File/Handle.pm
-    version: 0
   Cache::File::Heap:
     file: lib/Cache/File/Heap.pm
     version: 2.05
   Cache::IOString:
     file: lib/Cache/IOString.pm
-    version: 0
   Cache::Memory:
     file: lib/Cache/Memory.pm
     version: 2.05
@@ -53,7 +51,6 @@ provides:
     version: 2.05
   Cache::Memory::HeapElem:
     file: lib/Cache/Memory/HeapElem.pm
-    version: 0
   Cache::Null:
     file: lib/Cache/Null.pm
     version: 2.05
@@ -65,10 +62,8 @@ provides:
     version: 2.05
   Cache::RemovalStrategy::FIFO:
     file: lib/Cache/RemovalStrategy/FIFO.pm
-    version: 0
   Cache::RemovalStrategy::LRU:
     file: lib/Cache/RemovalStrategy/LRU.pm
-    version: 0
   Cache::Tester:
     file: lib/Cache/Tester.pm
     version: 2.05
