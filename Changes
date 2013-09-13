@@ -1,3 +1,10 @@
+    - Increase the delay of the cache invalidation in the tests by default to
+    avoid test failures due to high load.
+        - https://rt.cpan.org/Public/Bug/Display.html?id=27280
+        - One can set the PERL_CACHE_PM_TESTING environment variable to a true
+        value to set it back at a quicker-to-run 1 second delay.
+        - Thanks to ANDK for reporting it.
+
 2013-09-05
     - Add t/pod.t and got the embedded PODs to validate.
     - Convert the Build system to Module-Build.
