@@ -4,6 +4,11 @@
         - One can set the PERL_CACHE_PM_TESTING environment variable to a true
         value to set it back at a quicker-to-run 1 second delay.
         - Thanks to ANDK for reporting it.
+    - Fix Bug in Cache::Memory regarding Namespaces
+        - https://rt.cpan.org/Ticket/Display.html?id=32339 .
+        - ->set after ->set_namespace failed.
+        - Thanks to justin@techadvise.com for the report and for a proposed
+        fix.
 
 2013-09-05
     - Add t/pod.t and got the embedded PODs to validate.

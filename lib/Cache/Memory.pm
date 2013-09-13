@@ -210,6 +210,10 @@ sub namespace {
 sub set_namespace {
     my Cache::Memory $self = shift;
     my ($namespace) = @_;
+
+    $Age_Heaps{$namespace} ||= Heap::Fibonacci->new();
+    $Use_Heaps{$namespace} ||= Heap::Fibonacci->new();
+
     $self->{namespace} = $namespace;
 }
 
