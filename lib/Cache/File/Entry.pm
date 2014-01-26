@@ -30,7 +30,7 @@ use Carp;
 use base qw(Cache::Entry);
 use fields qw(dir path lockdetails);
 
-our $VERSION = '2.06';
+our $VERSION = '2.07';
 
 # hash of locks held my the process, keyed on path.  This is useful for
 # catching potential deadlocks and warning the user, and for implementing
