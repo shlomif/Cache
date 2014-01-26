@@ -29,6 +29,7 @@ my $builder = Test::Run::Builder->new(
         'Storable'		=> '1.00',
         'Symbol'			=> '1.02',
         'Test::More'		=> '0.45',
+        'perl'              => '5.006',
     },
     configure_requires =>
     {
