@@ -45,7 +45,7 @@ package Cache;
 
 require 5.006;
 use strict;
-use warnings::register;
+use warnings;
 use Carp;
 use Date::Parse;
 
@@ -54,7 +54,7 @@ use fields qw(
         default_expires removal_strategy size_limit
         load_callback validate_callback);
 
-our $VERSION = '2.07';
+our $VERSION = '2.08';
 
 our $EXPIRES_NOW = 'now';
 our $EXPIRES_NEVER = 'never';

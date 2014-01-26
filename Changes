@@ -1,4 +1,8 @@
 2014-01-26
+    - Convert from use "warnings::register;" to "use warnings;".
+    - Bugfix/maintenace release (2.08)
+
+2014-01-26
     - Add perl to the prereq in META.yml/META.json
         - Kwalitee / CPANTS
     - Bugfix/maintenace release (2.07)
