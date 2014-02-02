@@ -1,5 +1,7 @@
     - Fix a small grammar in the docs (double "as") reported by pink_mist.
         - Thanks, pink_mist!
+    - Another fix for a small typo by pink_mist.
+        - Thanks again.
 
 2014-02-02
     - Use Digest::SHA instead of Digest::SHA1

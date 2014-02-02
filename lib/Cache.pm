@@ -614,7 +614,7 @@ the storage medium.
 
 =item Cache::File no longer supports separate masks for entries and
 directories.  It is not a very secure configuration and presents numerous
-issues for cache consistency and is hence depricated.  There is still some
+issues for cache consistency and is hence deprecated.  There is still some
 work to be done to ensure cache consistency between accesses by different
 users.
 
