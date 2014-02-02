@@ -1,6 +1,7 @@
 Build
 MANIFEST.bak
 META.json
+META.yml
 MYMETA.json
 MYMETA.yml
 _build
