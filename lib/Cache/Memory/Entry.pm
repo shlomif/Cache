@@ -25,7 +25,7 @@ use Carp;
 use base qw(Cache::Entry);
 use fields qw(store_entry);
 
-our $VERSION = '2.08';
+our $VERSION = '2.09';
 
 
 sub new {

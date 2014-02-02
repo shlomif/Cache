@@ -28,7 +28,7 @@ use Cache::Null::Entry;
 use base qw(Cache);
 use fields qw(cache_root);
 
-our $VERSION = '2.08';
+our $VERSION = '2.09';
 
 =head1 CONSTRUCTOR
 

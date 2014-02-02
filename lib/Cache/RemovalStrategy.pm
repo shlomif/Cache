@@ -16,7 +16,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '2.08';
+our $VERSION = '2.09';
 
 
 sub new {
