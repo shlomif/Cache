@@ -25,7 +25,7 @@ use strict;
 use warnings;
 use Cache::File::Heap;
 use Cache::File::Entry;
-use Digest::SHA1 qw(sha1_hex);
+use Digest::SHA qw(sha1_hex);
 use Fcntl qw(LOCK_EX LOCK_NB);
 use Symbol ();
 use File::Spec;

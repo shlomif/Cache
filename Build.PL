@@ -16,7 +16,7 @@ my $builder = Test::Run::Builder->new(
     {
         'DB_File'			=> '1.72',
         'Date::Parse'		=> '2.24',
-        'Digest::SHA1'		=> '2.01',
+        'Digest::SHA'		=> '0',
         'Fcntl'			=> '1.03',
         'File::Find'		=> '0',
         'File::NFSLock'		=> '1.20',
