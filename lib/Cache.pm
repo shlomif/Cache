@@ -10,7 +10,7 @@ store data locally to save repeated and redundant expensive calls to remote
 machines or databases.
 
 The Cache interface is implemented by derived classes that store cached data
-in different manners (such as as files on a filesystem, or in memory).
+in different manners (such as files on a filesystem, or in memory).
 
 =head1 USAGE
 
