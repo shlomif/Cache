@@ -1,7 +1,13 @@
+2014-05-13
     - Fix a small grammar in the docs (double "as") reported by pink_mist.
         - Thanks, pink_mist!
     - Another fix for a small typo by pink_mist.
         - Thanks again.
+    - Add Cache category of warnings to make sure warnings do not emit
+    an error.
+        - See https://rt.cpan.org/Public/Bug/Display.html?id=95608
+        - Thanks to Gabor Szabo for the report.
+    - Bugfix/maintenance release (2.10)
 
 2014-02-02
     - Use Digest::SHA instead of Digest::SHA1

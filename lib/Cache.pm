@@ -49,6 +49,10 @@ use warnings;
 use Carp;
 use Date::Parse;
 
+# For registering the 'Cache' category. See:
+# https://rt.cpan.org/Public/Bug/Display.html?id=95608
+use warnings::register;
+
 use base qw(Tie::Hash);
 use fields qw(
         default_expires removal_strategy size_limit
