@@ -41,7 +41,7 @@ use fields qw(
     expheap ageheap useheap index lockfile
     lock lockcount openexp openage openuse openidx);
 
-our $VERSION = '2.09';
+our $VERSION = '2.10';
 
 sub LOCK_NONE ()  { 0 }
 sub LOCK_LOCAL () { 1 }

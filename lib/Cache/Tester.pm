@@ -32,7 +32,7 @@ use vars qw(@ISA @EXPORT $VERSION $CACHE_TESTS);
 use Carp;
 
 @ISA = qw(Exporter Test::More);
-$VERSION = '2.09';
+$VERSION = '2.10';
 @EXPORT = (qw(run_cache_tests $CACHE_TESTS), @Test::More::EXPORT);
 
 $CACHE_TESTS = 79;

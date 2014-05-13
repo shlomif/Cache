@@ -23,7 +23,7 @@ use Cache::IOString;
 use base qw(Cache::Entry);
 use fields qw();
 
-our $VERSION = '2.09';
+our $VERSION = '2.10';
 
 
 sub new {
