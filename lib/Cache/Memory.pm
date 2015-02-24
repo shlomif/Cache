@@ -34,7 +34,7 @@ use Cache::Memory::Entry;
 use base qw(Cache);
 use fields qw(namespace);
 
-our $VERSION = '2.10';
+our $VERSION = '2.11';
 
 
 # storage for all data
