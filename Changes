@@ -1,3 +1,9 @@
+2015-02-24
+    - Make sure t/file_lru.t skips all tests if Time::HiRes isn't installed.
+        - See https://rt.cpan.org/Ticket/Display.html?id=102316
+        - Thanks to Otto J. Makela for the report.
+    - Bugfix/maintenance release (2.11)
+
 2014-05-13
     - Fix a small grammar in the docs (double "as") reported by pink_mist.
         - Thanks, pink_mist!

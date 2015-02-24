@@ -2,7 +2,6 @@ use strict;
 use warnings;
 use Test::More;
 use File::Temp qw(tempdir);
-use Time::HiRes;
 use Carp;
 
 $SIG{__DIE__} = sub { confess @_; };
