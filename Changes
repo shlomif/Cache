@@ -1,3 +1,5 @@
+    - Update the VCS repo link to the GitHub one.
+
 2015-02-24
     - Make sure t/file_lru.t skips all tests if Time::HiRes isn't installed.
         - See https://rt.cpan.org/Ticket/Display.html?id=102316

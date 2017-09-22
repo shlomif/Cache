@@ -40,7 +40,7 @@ my $builder = Test::Run::Builder->new(
     {
         resources =>
         {
-            repository => "http://bitbucket.org/shlomif/web-cpan",
+            repository => "https://github.com/shlomif/Cache",
         },
         keywords =>
         [
